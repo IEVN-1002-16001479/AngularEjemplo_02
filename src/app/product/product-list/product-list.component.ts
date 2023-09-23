@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Iproducto } from '../iproducto';
 
 @Component({
   selector: 'app-product-list',
@@ -12,8 +13,12 @@ export class ProductListComponent {
   muestraImg:boolean=true;
   listFiltrer:string='';
 
+  showImage():void{
+    this.muestraImg=!this.muestraImg;
+  }
 
-  productos:any[]=[
+
+  productos:Iproducto[]=[
   {
     "productoId":1,
     "Modelo":"Sentra",
@@ -29,7 +34,7 @@ export class ProductListComponent {
     "productoId":2,
     "Modelo":"Tsuru",
     "Descripcion":"4 puertas chicas ",
-    "year":"Enero 2 2020",
+    "year":"abril 2 2020",
     "precio":15000,
     "Marca":"TOYOTA",
     "Color":"AZUL",
