@@ -1,0 +1,12 @@
+
+
+<div class="container">
+    <mat-form-field>
+        <input matInput [(ngModel)]="num1" type="number" placeholder="NUMERO 1" >
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="num2" type="number" placeholder="NUMERO 2" >
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="sumar()">SUMAR</button>
+    <p>LA SUMA ES : {{res}} </p>
+</div>
