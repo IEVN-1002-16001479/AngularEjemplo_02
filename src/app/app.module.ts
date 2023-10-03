@@ -15,6 +15,7 @@ import { OperasBasComponent } from './formularios/operas-bas/operas-bas.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Suma2Component } from './formularios/suma2/suma2.component';
 import { MenuComponent } from './menu/menu/menu.component';
+import { MaterialModule } from './material/material/material.module';
 
 @NgModule({
   declarations: [
@@ -29,10 +30,11 @@ import { MenuComponent } from './menu/menu/menu.component';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatInputModule,
-    MatIconModule,
-    MatToolbarModule
+    MaterialModule
+    //MatButtonModule,
+    //MatInputModule,
+    //MatIconModule,
+    //MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
